@@ -21,6 +21,9 @@ class Graph:
 
 
 def simple(N):
+    """
+    A simple vertical division down the center
+    """
     X = make_pts(N)
     y = []
     for x_1, x_2 in X:
@@ -30,6 +33,9 @@ def simple(N):
 
 
 def diag(N):
+    """
+    A diagonal division
+    """
     X = make_pts(N)
     y = []
     for x_1, x_2 in X:
@@ -39,6 +45,9 @@ def diag(N):
 
 
 def split(N):
+    """
+    a split down the center
+    """
     X = make_pts(N)
     y = []
     for x_1, x_2 in X:
@@ -48,6 +57,9 @@ def split(N):
 
 
 def xor(N):
+    """
+    xor (creates a checkered pattern)
+    """
     X = make_pts(N)
     y = []
     for x_1, x_2 in X:
@@ -57,6 +69,9 @@ def xor(N):
 
 
 def circle(N):
+    """
+    a circle of points
+    """
     X = make_pts(N)
     y = []
     for x_1, x_2 in X:
@@ -67,6 +82,9 @@ def circle(N):
 
 
 def spiral(N):
+    """
+    a spiral of points
+    """
 
     def x(t):
         return t * math.cos(t) / 20.0
